@@ -1,6 +1,6 @@
 import streamlit as st
 import pickle
-pip install joblib
+import joblib
 import numpy as np
 import pandas as pd
 
@@ -493,3 +493,4 @@ with st.sidebar:
     </div>
 
     """, unsafe_allow_html=True)
+
