@@ -1,6 +1,6 @@
 import streamlit as st
 import pickle
-import joblib
+pip install joblib
 import numpy as np
 import pandas as pd
 
@@ -491,4 +491,5 @@ with st.sidebar:
         <h4>🚀 Powered by AI</h4>
         <p style="margin: 0;">Advanced machine learning for precise bean classification</p>
     </div>
+
     """, unsafe_allow_html=True)
