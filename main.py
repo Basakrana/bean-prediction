@@ -1,10 +1,16 @@
-import streamlit as st
+# Try to import joblib, install if missing
+try:
+    import joblib
+except ImportError:
+    import subprocess
+    import sys
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "joblib"])
+    import joblib
+
 import pandas as pd
-import joblib
-import matplotlib.pyplot as plt
-import matplotlib.patches as mpatches
+import streamlit as st
 import numpy as np
-from datetime import datetime
+import matplotlib.pyplot as plt
 # -------------------- Page Configuration --------------------
 st.set_page_config(
     page_title="AI Bean Classification System",
@@ -548,6 +554,7 @@ st.markdown("""
     </p>
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
