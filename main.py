@@ -1,4 +1,9 @@
 
+import joblib
+import pandas as pd
+import streamlit as st
+import numpy as np
+import matplotlib.pyplot as plt
 # -------------------- Page Configuration --------------------
 st.set_page_config(
     page_title="AI Bean Classification System",
